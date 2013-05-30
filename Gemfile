@@ -6,6 +6,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
+group :production do
+  gem 'pg'
+end
+
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -13,6 +17,7 @@ group :assets do
 end
 
 gem 'jquery-rails', '~> 2.0.0'
+gem 'fog'
 
 # Refinery CMS
 gem 'refinerycms', '~> 2.0.0', :git => 'git://github.com/refinery/refinerycms.git', :branch => '2-0-stable'
