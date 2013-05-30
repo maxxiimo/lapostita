@@ -12,13 +12,13 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '0.12.2'
 end
 
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier',     '>= 1.0.3'
+  gem 'sass-rails',   '~> 3.2.5'
+  gem 'coffee-rails', '~> 3.2.2'
+  gem 'uglifier',     '>= 1.2.3'
 
   # Compass specific gems.
   gem 'compass-rails'
