@@ -15,6 +15,19 @@ body
   line-height: $base-line-height
   background-color: $bg-body
 
+.container
+  +container($total-columns, $break6, $break9, $break13)
+  // +susy-grid-background
+
+  +at-breakpoint($break6)
+    // +susy-grid-background
+
+  +at-breakpoint($break9)
+    // +susy-grid-background
+
+  +at-breakpoint($break13)
+    // +susy-grid-background
+
 img
   vertical-align: middle
 
