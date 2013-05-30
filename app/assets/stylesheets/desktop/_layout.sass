@@ -1,0 +1,59 @@
+/*  Base
+  -----------------------
+
+html, button, input, select, textarea
+  font-family: $base-font-family
+  color: $base-font-color
+
+html
+  /* This may cause problems in Firefox when combined with JS plugins (like modals or drag-and-drop UIs) that rely on viewport dimension calculations */
+  overflow-y: scroll
+  -webkit-font-smoothing: antialiased
+
+body
+  font-size: $base-font-size
+  line-height: $base-line-height
+  background-color: $bg-body
+
+img
+  vertical-align: middle
+
+
+/* Header
+  -----------------------
+
+// navigation in _navigation.sass
+
+header
+  height: 60px
+  // height: 3.75em
+  margin-bottom: 10px
+  // margin-bottom: .625em
+  background-color: $bg-header
+
+.logo
+  float: left
+  margin: .625em 0 0 0
+
+
+/* Footer
+  -----------------------
+
+footer
+  height: 100px
+  // height: 6.25em
+  margin-top: 30px
+  ul
+    margin-bottom: 5px
+    // margin-bottom: .3125em
+    li
+      display: inline-block
+      padding: 0 10px
+      // padding: 0 .625em
+    li:first-child
+      padding-left: 0
+
+  p
+    margin-top: 0
+    font-size: 75%
+    color: $font-gray
