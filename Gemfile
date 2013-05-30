@@ -4,6 +4,11 @@ gem 'rails', '3.2.13'
 
 group :development, :test do
   gem 'sqlite3'
+
+  # http://railscasts.com/episodes/402-better-errors-railspanel
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
 end
 
 group :production do
@@ -13,7 +18,12 @@ end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier',     '>= 1.0.3'
+
+  # Compass specific gems.
+  gem 'compass-rails'
+  gem 'oily_png'
+  gem 'susy'
 end
 
 gem 'jquery-rails', '~> 2.0.0'
