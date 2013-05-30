@@ -11,10 +11,10 @@ Refinery::Resources.configure do |config|
 
   # Configure S3 (you can also use ENV for this)
   # The s3_backend setting by default defers to the core setting for this but can be set just for resources.
-  # config.s3_backend = Refinery::Core.s3_backend
-  # config.s3_bucket_name = ENV['S3_BUCKET']
-  # config.s3_access_key_id = ENV['S3_KEY']
-  # config.s3_secret_access_key = ENV['S3_SECRET']
+  config.s3_backend = Refinery::Core.s3_backend
+  config.s3_bucket_name = ENV['S3_BUCKET']
+  config.s3_access_key_id = ENV['S3_KEY']
+  config.s3_secret_access_key = ENV['S3_SECRET']
   # config.s3_region = ENV['S3_REGION]
 
   # Configure Dragonfly
@@ -23,5 +23,4 @@ Refinery::Resources.configure do |config|
   # config.dragonfly_secret = "1e0c65a8346c50c7cba8c3295bd474d58fbd1ce0e0816d52"
   # config.dragonfly_url_format = "/system/resources/:job/:basename.:format"
   # config.datastore_root_path = "C:/Projects/lapostita/public/system/refinery/resources"
-
 end
